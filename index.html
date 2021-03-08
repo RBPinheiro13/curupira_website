@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <!-- <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png"> -->
+  <link rel="icon" type="image/png" href="./images/white_curupira.png">
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <meta  content="IE=edge,chrome=1" />
+  <title>
+    Curupira
+  </title>
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+  <!--     Fonts and icons     -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <!-- CSS Files -->
+  <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="./assets/css/now-ui-kit.css?v=1.3.0" rel="stylesheet" />
+  <link href="./assets/css/demo.css" rel="stylesheet">
+</head>
+
+<body class="index-page sidebar-collapse">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <div class="navbar-translate">
+        <a class=" navbar-brand" href="javascript:void(0)" rel="tooltip" onclick="scrollToBasic()">
+          <img class="l-logo" src="./images/curupira.png" alt="">
+          <p>Curupira</p>
+        </a>
+        <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-bar top-bar"></span>
+          <span class="navbar-toggler-bar middle-bar"></span>
+          <span class="navbar-toggler-bar bottom-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse justify-content-end" id="navigation">
+
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="javascript:void(0)" onclick="scrollToNews()">
+              <i class="now-ui-icons education_agenda-bookmark"></i>
+              <p>Events</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="javascript:void(0)" onclick="scrollToPublish()">
+              <i class="now-ui-icons education_paper"></i>
+              <p>Publications</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="javascript:void(0)" onclick="scrollToToolbox()">
+              <i class="now-ui-icons education_paper"></i>
+              <p>ToolBox</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="javascript:void(0)" onclick="scrollToTeam()">
+              <i class="now-ui-icons business_badge"></i>
+              <p>Members</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="javascript:void(0)" onclick="scrollToPartner()">
+              <i class="now-ui-icons business_briefcase-24"></i>
+              <p>Partners</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" rel="tooltip" title="Find us on GitHub" data-placement="bottom" href="https://github.com/" target="_blank">
+              <i class="fab fa-github"></i>
+              <p class="d-lg-none d-xl-none">GitHub</p>
+            </a>
+          </li>
+          <li>
+            <div class="troca">
+              <a href="./index.html"><img src="./images/iconUK.png" class="l-logo"/></a>
+              <a href="./nido.html"><img src="./images/iconBrasil.png" class="l-logo"/></a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- End Navbar -->
+  <div class="wrapper">
+    <a name="top"></a>
+    <div class="main">
+      <div class="section section-basic" id="basic-elements">
+        <div class="container">
+          <div class="title">
+            <h1>About</h1>
+          </div>
+          <div class="row">
+            <h4 style="text-align: justify;"> The project Curupira is a partnership among <a href="http://www.sipam.gov.br/"> Censipam (Centro Gestor e Operacional do Sistema de Proteção da Amazônia)</a>, <a href="https://www.unb.br/">UnB (the University of Brasília)</a> and <a href="https://www.finatec.org.br/">Finatec (Fundação de Empreendimentos Científicos e Tecnológicos)</a>. This project was proposed in order to use machine learnign algorithms to help in the protection of the Amazon Rainforest. The objective is to develop intelligent tools for identification and prevention of natural disasters such as deforestation, wildfires and criminal acitivities such as clandestine airports.</h4>
+            <div class="col-lg-6 col-md-12">
+              <h4 style="text-align: justify;"> Images from different sattelites can be a big source of information. However, analysing these images manually by specialists is a complex and unfeasible task considering the multispectral nature of the images and the growing volume of data. </h4>
+            </div>
+            <div class="col-lg-6">
+              <img src="./images/brasil_sat.png" class="responsive" />
+            </div>
+          </div>
+          <br>
+          <br>
+          <h4 style="text-align: justify;"> This scenario is appropriate to employ computational techniques based on object detection and semantic segmentation, in order to discover the location and magnitude of these unwanted events. These techniques often receive RGB images as input. However, since optical sattelite images do not provide much information due to cloud cover above the rainforest, we must adapt these algorithms to accept multispectral and SAR imagery as input.</h4>
+        </div>
+      </div>
+
+      <!-- EVENTS SECTION -->
+      <div class="section section-news" data-background-color="black">
+        <div class="container">
+          <div class="title">
+            <h1>Events</h1>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="text-center col-md-12 col-lg-8">
+                <h2>Project Kickstart</h2>
+                <a href="Link" class="btn btn-primary btn-lg btn-round" role="button">
+                  Event link
+                </a>
+                <br>
+                <br>
+                <h3>22, March, 2021</h3>
+                <br>
+                <h5 class="description">More Information: email@gmail.com</h5>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <h3>Schedule</h3>
+              <h5 class="description">• 10:00 - Opening</h5>
+            </div>
+          </div>
+          <br><br><br>
+
+        </div>
+      </div>
+      <!-- End .section-navbars  -->
+
+<!-- PUBLICATIONS SECTION -->
+
+      <div class="section section-publish">
+        <div class="container ">
+          <h1>Publications</h1>
+          <div class="row">
+
+            <div class="col-md-10 ml-auto col-xl-12 mr-auto">
+              <!-- Nav tabs -->
+                <div class="card">
+                  <div class="card-body">
+                  <p class="category">Title of the document</p>
+                    <!-- Tab panes -->
+                    <div class="tab-content ">
+                      <p>Type of the paper <BR />
+                        Author •  <BR />
+                        Supervisor •  <BR />
+                        Committee •
+                      </p>
+                      <p><a href="LINK" target="_blank">Report (___KB)</a>
+                      |  <a href="LINK" target="_blank">Slides (___MB)</a>
+                      |  <a href="LINK" target="_blank">All</a></p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!--
+      <div class="text-center col-md-12 col-lg-8">
+        <h5 class="description">O projeto “KnEDLe – Knowledge Extraction from Documents of Legal content” é financiado pela FAPDF (Fundação de Apoio à Pesquisa do Distrito Federal) através de uma parceria tripartite com a UnB (Universidade de Brasília) e Finatec (Fundação de Empreendimentos Científicos e Tecnológicos).</h5>
+        <br>
+        <br>
+        <br>
+        <h3>Fale conosco</h3>
+        <h5 class="description">ask_knedle@googlegroups.com</h5>
+        <h5 class="description">Universidade de Brasília, Departamento de Ciência da Computação</h5>
+
+
+      </div>End Section Tabs -->
+      <!-- End Section Tabs -->
+
+      <!-- Toolbox  -->
+      <div class="section section-toolbox" data-background-color="black">
+        <div class="container">
+          <div class="row">
+            <div class="text-center col-md-6">
+              <img src="./images/qgis.png">
+              <h4>QGis Toolbox</h4>
+              <br>
+              <br>
+              <p>Description of the toolbox created to identify natural disasters and criminal acitivities from geotif images using semantic segmentation.</p>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <a href="Link:Documentation" class="btn btn-primary btn-lg btn-round" role="button">
+                Documentation
+              </a>
+              <a href="Link:Repo Github" target="_blank" class="btn btn-lg btn-outline-primary btn-round" role="button">
+                Repository
+              </a>
+            </div>
+            <div class="col-sm-6">
+              <img src="./images/semantic_example.png" >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--  end notifications -->
+      <!-- Typography -->
+
+      <div class="section section-team section-javascript">
+        <div class="container">
+          <h1 >Members</h1>
+          <div class="space-50"></div>
+          <div id="images">
+            <div class="row">
+              <div class="col-sm-2">
+                <img src="./images/white-square.png" alt="Rounded Image" class="rounded img-raised">
+                <button type="button" class="btn btn-default" data-container="body"
+                  data-toggle="modal" data-target="#member" >
+                  Member 1 Example
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="space-50"></div>
+          <div id="images">
+            <div class="row">
+              <div class="col-sm-2">
+                <img src="./images/white-square.png" alt="Rounded Image" class="rounded img-raised">
+                <button type="button" class="btn btn-default" data-container="body"
+                  data-toggle="modal" data-target="#member" >
+                  Member 2 Example
+                </button>
+              </div>
+
+            </div>
+          </div>
+          <div class="space-50"></div>
+          <br><br>
+
+<!-- LINHA COM OS EX MEMBROS -->
+
+          <h3 >Ex Members</h3>
+          <div id="images">
+            <div class="row">
+              <div class="col-sm-2">
+                <img src="./images/white-square.png" alt="Rounded Image" class="rounded img-raised">
+                <button type="button" class="btn btn-default" data-container="body"
+                  data-toggle="modal" data-target="#exmember" >
+                  Ex-membro 1
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+<!-- SECTION PARTNERS -->
+
+      <div class="section section-partner">
+        <div class="container text-center">
+          <div class="row justify-content-md-center">
+            <div class="col-md-12 col-lg-8">
+              <h2 class="title">Partners</h2>
+              <br><br>
+              <h6 class="category category-absolute">
+                <a href="https://www.unb.br/" target="_blank">
+                  <img src="./images/Logo_UnB.svg" class="unb-logo" style="margin:10px"/>
+                </a>
+                <a href="http://www.sipam.gov.br/" target="_blank">
+                  <img src="./images/censipam.png" class="creative-tim-logo" style="margin:10px"/>
+                </a>
+                <a href="https://www.finatec.org.br" target="_blank">
+                  <img src="./images/logo_finatec.png" class="creative-tim-logo" style="margin:10px"/>
+                </a>
+              </h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section section-download" id="#download-section" data-background-color="black">
+        <div class="container">
+          <div class="row justify-content-md-center sharing-area text-center">
+            <div class="text-center col-md-12 col-lg-8">
+              <h5 class="description">The project Curupira is a partnership among CENSIPAM (Centro Gestor e Operacional do Sistema de Proteção da Amazônia), UnB (University of Brasília) and Finatec (Fundação de Empreendimentos Científicos e Tecnológicos)</h5>
+              <br>
+              <br>
+              <br>
+              <h3>Contact Us</h3>
+              <h5 class="description">email_curupira@unb.br</h5>
+              <h5 class="description">University of Brasilia, Department of Electrical Engineering</h5>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!--######################### Member Information ################################################# -->
+    <!--  End Modal -->
+    <!-- Member Information -->
+    <div class="modal fade" id="member" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header justify-content-center">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+              <i class="now-ui-icons ui-1_simple-remove"></i>
+            </button>
+            <h4 class="cargo">Member PHD</h4>
+          </div>
+          <div class="modal-body">
+            <p><i class="now-ui-icons ui-1_email-85"></i> member@unb.br</p>
+            <p><i class="now-ui-icons education_agenda-bookmark"></i><a href="member website"> Homepage </a></p>
+            <p><i class="fab fa-github"></i><a href="https://github.com/ member"> Github</a></p>
+            <p><i class="now-ui-icons business_badge"></i> member - UnB</p>
+          </div>
+          <div class="modal-footer">
+            <a href="http://lattes.cnpq.br/ member"><button type="button" class="btn btn-default">Curriculo Lattes</button></a>
+            <button type="button" class="btn btn-blue" data-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  End Modal -->
+
+    <!--  Ex members-->
+    <!-- ex member Information -->
+    <div class="modal fade" id="exmember" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header justify-content-center">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+              <i class="now-ui-icons ui-1_simple-remove"></i>
+            </button>
+            <h4 class="cargo">Undergraduate in Ex membering</h4>
+          </div>
+          <div class="modal-body">
+            <p><i class="now-ui-icons ui-1_email-85"></i> exmember@gmail.com</p>
+            <p><i class="now-ui-icons education_agenda-bookmark"></i><a href="https://www.linkedin.com/exmember/"> LinkedIn</a></p>
+            <p><i class="fab fa-github"></i><a href="https://github.com/ ex member"> Github</a></p>
+            <p><i class="now-ui-icons business_badge"></i> Undergraduate student - UnB</p>
+          </div>
+          <div class="modal-footer">
+            <a href="http://lattes.cnpq.br/exmember"><button type="button" class="btn btn-default">Curriculo Lattes</button></a>
+            <button type="button" class="btn btn-blue" data-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  End Modal -->
+
+<!--######################################## END ################################################# -->
+
+    <footer class="footer" data-background-color="black">
+
+      <div class=" container">
+
+        <div class="copyright" id="copyright">
+          &copy;
+          <script>
+            document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))
+          </script>, Curupira, Designed by
+          <a href="https://www.invisionapp.com" target="_blank">Invision</a> and
+          <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a>.
+        </div>
+      </div>
+    </footer>
+  </div>
+  <!--   Core JS Files   -->
+  <script src="./assets/js/core/jquery.min.js" type="text/javascript"></script>
+  <script src="./assets/js/core/popper.min.js" type="text/javascript"></script>
+  <script src="./assets/js/core/bootstrap.min.js" type="text/javascript"></script>
+  <!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
+  <script src="./assets/js/plugins/bootstrap-switch.js"></script>
+  <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+  <script src="./assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
+  <!--  Plugin for the DatePicker, full documentation here: https://github.com/uxsolutions/bootstrap-datepicker -->
+  <script src="./assets/js/plugins/bootstrap-datepicker.js" type="text/javascript"></script>
+  <!--  Google Maps Plugin    -->
+  <!-- <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script> -->
+  <!-- Control Center for Now Ui Kit: parallax effects, scripts for the example pages etc -->
+  <script src="./assets/js/now-ui-kit.js?v=1.3.0" type="text/javascript"></script>
+  <script>
+    $(document).ready(function() {
+      // the body of this function is in assets/js/now-ui-kit.js
+      nowuiKit.initSliders();
+    });
+
+    function scrollToBasic() {
+
+      if ($('.section-basic').length != 0) {
+        $("html, body").animate({
+          scrollTop: $('.section-basic').offset().top
+        }, 1000);
+      }
+    }
+
+    function scrollToNews() {
+
+      if ($('.section-news').length != 0) {
+        $("html, body").animate({
+          scrollTop: $('.section-news').offset().top
+        }, 1000);
+      }
+    }
+    function scrollToPublish() {
+
+      if ($('.section-publish').length != 0) {
+        $("html, body").animate({
+          scrollTop: $('.section-publish').offset().top
+      }, 1000);
+      }
+    }
+
+    function scrollToTeam() {
+
+      if ($('.section-team').length != 0) {
+        $("html, body").animate({
+          scrollTop: $('.section-team').offset().top
+        }, 1000);
+      }
+    }
+    function scrollToPartner() {
+
+      if ($('.section-partner').length != 0) {
+        $("html, body").animate({
+          scrollTop: $('.section-partner').offset().top
+        }, 1000);
+      }
+    }
+    function scrollToToolbox() {
+      if ($('.section-toolbox').length != 0) {
+        $("html, body").animate({
+          scrollTop: $('.section-toolbox').offset().top
+        }, 1000);
+      }
+    }
+  </script>
+</body>
+
+</html>
